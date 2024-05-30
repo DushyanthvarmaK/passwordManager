@@ -1,0 +1,121 @@
+.bg-container {
+  background-color: #9ba9eb;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.sub-bg {
+  width: 90%;
+}
+.app-logo {
+  height: 70px;
+  width: 250px;
+}
+.input-section {
+  background-color: #5763a5;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.input-heading {
+  color: white;
+  font-weight: 500;
+  font-family: Roboto;
+  font-size: 24px;
+}
+.inputs {
+  background-color: #454f84;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+.password-manager {
+  width: 350px;
+  height: 350px;
+}
+.input-container {
+  display: flex;
+  border-radius: 5px;
+  border: 0px none;
+  padding: 10px;
+  background-color: white;
+  width: 350px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.input-logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.input-item {
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid #454f84;
+  padding-left: 5px;
+}
+.add-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-button {
+  background-color: #0b69ff;
+  border-radius: 5px;
+  border: 0px none;
+  cursor: pointer;
+  padding: 15px;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  font-family: Roboto;
+}
+.password-section {
+  background-color: #5763a5;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.search-section {
+  display: flex;
+  justify-content: space-between;
+}
+.password-count {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.count {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.search-icon {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 30px;
+}
+.search {
+  height: 30px;
+  width: 30px;
+}
+.search-input {
+  border: 0px;
+  border-left: 1px solid #454f84;
+  padding-left: 5px;
+}
+.show-password-container {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-family: Roboto;
+}
