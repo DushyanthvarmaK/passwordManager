@@ -52,7 +52,6 @@ class InputSection extends Component {
         alt="no passwords"
         className="no-passwords-image"
       />
-
       <p>No Passwords</p>
     </div>
   )
@@ -74,11 +73,19 @@ class InputSection extends Component {
   }
 
   render() {
-    const {itemsList, searchInput, isActive} = this.state
-    const count = itemsList.length
+    const {
+      itemsList,
+      websiteInput,
+      usernameInput,
+      passwordInput,
+      searchInput,
+      isActive,
+    } = this.state
+
     const updatedList = itemsList.filter(each =>
       each.websiteInput.toLowerCase().includes(searchInput.toLowerCase()),
     )
+    const count = updatedList.length
 
     return (
       <div className="bg-container">
@@ -98,6 +105,7 @@ class InputSection extends Component {
                   alt="website"
                 />
                 <input
+                  value={websiteInput}
                   onChange={this.onChangeWebsite}
                   placeholder="Enter Website"
                   className="input-item"
@@ -111,6 +119,7 @@ class InputSection extends Component {
                   alt="username"
                 />
                 <input
+                  value={usernameInput}
                   onChange={this.onChangeUsername}
                   placeholder="Enter Username"
                   className="input-item"
@@ -124,6 +133,7 @@ class InputSection extends Component {
                   alt="password"
                 />
                 <input
+                  value={passwordInput}
                   onChange={this.onChangePassword}
                   placeholder="Enter Password"
                   className="input-item"
@@ -172,7 +182,7 @@ class InputSection extends Component {
               />
               <label htmlFor="showPassword">Show passwords</label>
             </div>
-            {count === 0 ? (
+            {count < 1 ? (
               this.renderNoPasswordsView()
             ) : (
               <ul className="list-items-container">
